@@ -40,7 +40,9 @@ article{
 }
 
 .TextBox {
-    max-width: 60%;
+    width: 60%;
+    min-width: 300px;
+    margin: auto;
 }
 
 .secundaryButton{
@@ -49,6 +51,8 @@ article{
   border-radius:5px;
   background-color:orange;
   font-size:20px;
+  margin: auto;
+  text-align: center;
 }
 
 .dropdown {
@@ -137,6 +141,10 @@ nav a:hover, .dropdown:hover .dropbtn {
 nav {
   overflow: hidden;
   background-color: #333;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction:row;
 }
 
 nav a {
@@ -147,6 +155,9 @@ nav a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  margin:auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .dropdown {
@@ -187,3 +198,4 @@ nav a:hover, .dropdown:hover .dropbtn {
 nav{
     background-color: orange;
 }
+

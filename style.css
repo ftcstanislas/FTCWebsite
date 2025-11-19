@@ -10,7 +10,7 @@ article{
 .MainItem {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
     background-color: #ffecc9;
     margin:auto;
     margin-top:20px;
@@ -22,7 +22,7 @@ article{
 }
 
 .MainItem img{
-    width: 200px;
+    max-width: 30%;
     min-width: 25%;
     margin-right: 10px;
     margin: auto;
@@ -36,14 +36,39 @@ h1 {
     font-size: 40px;
 }
 
-p{
+h2 {
+    font-size: 40px;
+    width: max-content;
+    margin: 50px auto 20px auto;
+}
+
+p, a{
     font-family: Arial, sans-serif;
 }
 
+#STTLogo{
+    max-width: 70px;
+    position: fixed;
+    left: 5px;
+    top: 5px;
+}
+
+#STALogo {
+    max-width: 70px;
+    position: fixed;
+    right: 5px;
+    top: 5px;
+}
+
 .TextBox {
-    width: 60%;
+    max-width: 800px;
     min-width: 300px;
     margin: auto;
+}
+
+.TextBox h2 {
+    margin: 0px;
+    font-size:25px;
 }
 
 .secundaryButton{
@@ -52,30 +77,25 @@ p{
   border-radius:5px;
   background-color:orange;
   font-size:25px;
+  font-family: Arial, sans-serif;
   margin: auto;
   text-align: center;
   box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
 }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
 
 .dropdown .dropbtn {
   font-size: 25px;  
   border: none;
   outline: none;
   color: black;
-  padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 25px;
+  margin-left: 30px;
+  margin-right: 30px;
   background-color: inherit;
   font-family: inherit;
-  margin: 0;
   font-family: 'Trebuchet MS', sans-serif;
 }
-
 
 .dropdown-content {
   display: none;
@@ -84,19 +104,6 @@ p{
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
 }
 
 .dropdown:hover .dropdown-content {
@@ -108,18 +115,8 @@ p{
   overflow: hidden;
 }
 
-
 nav a:hover, .dropdown:hover .dropbtn {
   background-color: red;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
 }
 
 .dropdown-content a {
@@ -143,7 +140,8 @@ nav a:hover, .dropdown:hover .dropbtn {
 
 nav {
   overflow: hidden;
-  background-color: #333;
+  background-color: orange;
+  box-shadow: 0 8px 10px rgba(0,0,0,0.2);
 }
 
 #collapsableNavBar {
@@ -160,9 +158,9 @@ nav a {
   color: black;
   font-family: 'Trebuchet MS', sans-serif;
   text-align: center;
-  padding: 20px;
+  padding: 25px;
   text-decoration: none;
-  margin:auto;
+  margin: 0 auto 0 auto;
   align-items: center;
   justify-content: center;
 }
@@ -185,25 +183,8 @@ nav a:hover, .dropdown:hover .dropbtn {
   z-index: 1;
 }
 
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-nav{
-    background-color: orange;
 }
 
 .NavBarToggle {
@@ -233,9 +214,9 @@ nav{
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 20px;
-  padding: 10px;
   scroll-behavior: smooth;
-  justify-content: center;
+  justify-content: flex-start;
+  max-width: 100%;
 }
 
 .carousel::-webkit-scrollbar {
@@ -255,6 +236,12 @@ nav{
   font-size: 25px;
 }
 
+
+.carousel-item img {
+  margin: 0px;
+  max-width: inherit;
+}
+
 /* Tablet */
 @media (min-width: 600px) {
   .carousel-item {
@@ -267,6 +254,19 @@ nav{
   .carousel-item {
     flex: 0 0 calc((100% - 2rem) / 3);   /* show 3 */
   }
+}
+
+form {
+    max-width: 1200px;
+    margin: 20px auto 20px auto;
+    background-color: #ffecc9;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+form label {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
 }
 
 

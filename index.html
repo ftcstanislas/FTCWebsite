@@ -16,8 +16,10 @@
 		    <div class="bar"></div>
             </button>
 
+		    <img src="./images/STALogo.png" id="STALogo">
+	        <img src="./images/STTLogo.webp" id="STTLogo">
+
             <div id="collapsableNavBar">
-	        <img src="./images/STTLogo.webp" style="max-height:70px;">
                 <a href="./index.html">Home</a>
                 <div class="dropdown">
                     <button class="dropbtn">Teams&#x25BE;</button>
@@ -26,15 +28,14 @@
                         <a href="#">Stanislas Tech Academy</a>
                     </div>
                 </div> 
-                <a href="./projects.html">Projects</a>
-                <a href="./contact.html">Contact</a>
-		<img src="./images/STALogo.jpg" style="max-height:70px">
+                <a href="./projects/index.html">Projects</a>
+                <a href="./index.html#contact">Contact</a>
             </div>
             
         </nav>        
     
         <article>
-            <h1>Under construction</h1>
+            <h2>Our teams</h2>
             <div class="MainItem">
                 <img src="./images/STTLogo.webp" alt="Stanislas Tech Team's logo">
                 <div class="TextBox">
@@ -45,7 +46,7 @@
                 </div>
             </div>
             <div class="MainItem">
-                <img src="./images/STALogo.jpg" alt="Stanislas Tech Academy's logo">
+                <img src="./images/STALogo.png" alt="Stanislas Tech Academy's logo">
                 <div class="TextBox">
                     <h1>STA #13953</h1>
                     <h2>Stanislas Tech Academy</h2>
@@ -53,19 +54,63 @@
                     <a class="secundaryButton" href="./STA">Read more</a>
                 </div>
             </div>
-		
-	    <div class="carousel">
-	    	<div class="carousel-item" href="./projects/CompSciBooklets.html">
-			<h1>Computer science booklets</h1>
-			<p>We made booklets to teach kids aged 9, 10, and 11, who have little to no experience with computer science, the basics of programming. They are fully offline, and are designed to be done without any external help from a teacher.</p>
-	    	</div>
-	    	<div class="carousel-item">
-		    <p>ITEM2</p>
-	    	</div>
-	    	<div class="carousel-item">
-		    <p>ITEM3</p>
-	    	</div>
-	    </div>
+	    
+            <h2>Our recent projects</h2>
+	        <div class="carousel">
+	    	    <div class="carousel-item">
+			        <h1>Computer science booklets</h1>
+			        <p>We made booklets to teach kids aged 9, 10, and 11, who have little to no experience with computer science, the basics of programming. They are fully offline, and are designed to be done without any external help from a teacher.</p>
+	    	        <a class="secundaryButton" href="./projects/CompSciBooklets.html">Read more</a>
+                </div>
+	    	    <div class="carousel-item">
+		            <h1>Website</h1>
+                    <p>Looks like you found it! The website you are currently on was made using HTML, CSS and JavaScript. We made this site to tell you all about our teams, share our projects, and all sort of other things.
+	    	    </div>
+	    	    <div class="carousel-item">
+		            <h1>Github</h1>
+                    <p>Both Stanislas Tech Team and Stanislas Tech Academy store their codebases on public github repositories, for other teams to look at, take inspiration from, and use as a refrence. Check them out here:</p>
+                    <a class="secundaryButton" href="https://github.com/STT-Decode">STT's github</a>
+                    <a class="secundaryButton" href="https://github.com/STA-Decode">STA's github</a>
+	    	    </div>
+                <div class="carousel-item">
+                    <h1>Check out all of our projects!</h1>
+                    <a class="secundaryButton" href="./projects/index.html">All projects</a>
+                </div>
+	        </div>
+
+            <h2>Our sponsors</h2>
+            <p style="max-width:max-content;margin:0 auto 10px auto;">Thank you all so much for supporting our teams and (hopefully) making our dreams of going to the world championships come true!</p>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="./images/StanislasLogo.png">
+                    <h1>Stanislascollege</h1>
+                    <p>The Stanislascollege is our school. They not only gave us a space for our teams to work in, but also give us a budget each year. Thank you so much!</p>
+                </div>
+            </div>
+
+            <h2 id="contact">Contact</h2>
+            <p style="width: max-content;margin:auto;">Feel free to contact us about everything you want! We are more than happy to respond to questions about us, questions about FTC, just a quick chat or sponsoring opportunities!</p>
+            <form action="https://formsubmit.co/ftcscw@gmail.com" method="POST">
+                <label>Name:</label>
+                <input type="text" name="name" required>
+                <br>
+
+                <label>Company/Team:</label>
+                <input type="text" name="company/team">
+                <br>
+
+                <label>Email adress:</label>
+                <input type="email" name="email" required>
+                <br>
+
+                <label>Message</label>
+                <br>
+                <textarea name="message" required style="min-width:60%;min-height:400px;"></textarea>
+                <br>
+                <button type="submit">Send</button>
+            </form>
+
+
         </article>
     </body>
 </html>
